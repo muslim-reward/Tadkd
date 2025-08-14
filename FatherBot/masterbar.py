@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 import os
 
-# قراءة التوكن من متغير البيئة
+# قراءة التوكن من GitHub Secrets
 TOKEN = os.getenv("BOT_TOKEN")
 
 async def auto_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
